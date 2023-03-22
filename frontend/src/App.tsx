@@ -22,7 +22,6 @@ const initialState = {
   users: []
 }
 
-
 function reducer(state: any, action: any) {
   switch (action.type) {
     case 'setPosts':
@@ -37,7 +36,6 @@ function reducer(state: any, action: any) {
       }
   }
 }
-
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
