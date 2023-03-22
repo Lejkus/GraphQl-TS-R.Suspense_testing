@@ -1,0 +1,34 @@
+@import "../styles/_variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../styles/_bootswatch.scss";
+
+.main-page{
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nav-tabs{
+        width: 100%;
+    }
+    .posts{
+        width:100%;
+        .post{
+            width: 65%;
+            margin: 10px;
+        }
+    }
+    .users{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .user{
+            min-width: 90px;
+            max-width: 200px;
+            width: 20%;
+            margin: 20px;
+        }
+    }
+    
+}
+
