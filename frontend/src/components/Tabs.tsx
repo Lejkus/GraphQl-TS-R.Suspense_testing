@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
 
 export default function Tabs() {
-    console.log('tabs');
     
     return (
         <Nav variant="tabs" >

@@ -1,9 +1,12 @@
-@import "../styles/_variables.scss";
+@import "./styles/_variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "../styles/_bootswatch.scss";
+@import "./styles/_bootswatch.scss";
 
+*{
+    font-size: 22px;
+}
 .main-page{
-    max-width: 75%;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,8 +16,14 @@
     .posts{
         width:100%;
         .post{
-            width: 65%;
+            min-width: 250px;
+            max-width: 800px;
+            width: 70%;
             margin: 10px;
+            .card{
+                width: 100%;
+                
+            }
         }
     }
     .users{
@@ -27,6 +36,22 @@
             max-width: 200px;
             width: 20%;
             margin: 20px;
+        }
+    }
+    .liked_posts{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .post{
+            min-width: 150px;
+            width: 25%;
+            margin: 10px;
+            .card{
+                height: 300px;
+                overflow: auto;
+                width: 100%;
+            }
         }
     }
     

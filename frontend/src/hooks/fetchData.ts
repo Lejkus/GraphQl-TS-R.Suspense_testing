@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getData = async (query:String) => {
+export const fetchData = async (query:String) => {
     const options = {
       method: 'POST',
       url: 'http://localhost:5000/graphql/',
@@ -12,6 +12,6 @@ export const getData = async (query:String) => {
       }
     };
     const { data } = await axios.request(options)
-  
+    
     return data
   };
